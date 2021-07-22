@@ -8,8 +8,6 @@ const getMessages = () => {
         }
         const input = document.querySelector("#passcode").value;
         console.log(input);
-        var CryptoJS = require("crypto-js");
-        console.log(CryptoJS.MD5(input));
     });
 }
 
