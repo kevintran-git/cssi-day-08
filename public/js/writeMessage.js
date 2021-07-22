@@ -11,4 +11,6 @@ const onSubmit = () => {
     console.log(CryptoJS.AES.decrypt(payload.message, hashedPasscode).toString(CryptoJS.enc.Utf8));
     firebase.database().ref().push(payload);
 
+    alert(`Message Sent! \n Hashed Password:${payload.passcode}\n Encrypted Message:${payload.message}`)
+
 }
